@@ -5,6 +5,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
+import com.heapanalytics.android.Heap
 import kotlinx.android.synthetic.main.activity_main.fab
 import kotlinx.android.synthetic.main.activity_main.toolbar
 
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-       //Heap.init(applicationContext, getString(R.string.heap_environment_id))
+        Heap.init(applicationContext, getString(R.string.heap_environment_id))
 
         fab.setOnClickListener { view ->
             Snackbar.make(
