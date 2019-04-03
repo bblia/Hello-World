@@ -12,7 +12,7 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        resValue "string", "heap_environment_id", "599331441"
+        resValue "string", "heap_environment_id", ""
     }
     buildTypes {
         release {
